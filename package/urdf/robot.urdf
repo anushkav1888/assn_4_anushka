@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<robot name="final">
+  <joint name="final__link_2_JOINT_10" type="revolute">
+    <parent link="final__link_2"/>
+    <child link="final__link_1_clone_0"/>
+    <origin xyz="-1 -0.625  -0.1" rpy="1.5705 0     0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.79769e+308" upper="1.79769e+308" effort="-1.0" velocity="-1.0"/>
+  </joint>
+  <joint name="final__link_2_JOINT_1" type="revolute">
+    <parent link="final__link_2"/>
+    <child link="final__link_1"/>
+    <origin xyz="1 0.625 -0.1" rpy="1.5705 0     0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.79769e+308" upper="1.79769e+308" effort="-1.0" velocity="-1.0"/>
+  </joint>
+  <joint name="final__link_2_JOINT_8" type="revolute">
+    <parent link="final__link_2"/>
+    <child link="final__link_1_clone"/>
+    <origin xyz="1   -0.625 -0.1" rpy="1.5705 0     0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.79769e+308" upper="1.79769e+308" effort="-1.0" velocity="-1.0"/>
+  </joint>
+  <joint name="final__link_2_JOINT_9" type="revolute">
+    <parent link="final__link_2"/>
+    <child link="final__link_1_clone_1"/>
+    <origin xyz="-1  0.625   -0.1" rpy="1.5705 0     0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.79769e+308" upper="1.79769e+308" effort="-1.0" velocity="-1.0"/>
+  </joint>
+  <link name="final__link_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <collision name="final__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </collision>
+    <visual name="final__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="final__link_1_clone">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <collision name="final__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </collision>
+    <visual name="final__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="final__link_1_clone_0">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <collision name="final__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </collision>
+    <visual name="final__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="final__link_1_clone_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <collision name="final__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </collision>
+    <visual name="final__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.3" length="0.25"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="final__link_2">
+    <inertial>
+      <mass value="0.954167"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.0984764" ixy="0" ixz="0" iyy="0.322504" iyz="0" izz="0.383055"/>
+    </inertial>
+    <collision name="final__collision">
+      <origin xyz="0 0   0" rpy="0 0 0"/>
+      <geometry>
+        <box size="2 1 0.5"/>
+      </geometry>
+    </collision>
+    <visual name="final__visual">
+      <origin xyz="0  0   0" rpy="0 0 0"/>
+      <geometry>
+        <box size="2 1 0.5"/>
+      </geometry>
+    </visual>
+  </link>
+  <!-- <link name="dummy">
+   </link>
+<link name="base_link">
+    <inertial>
+      <origin xyz="0.15 0.15 .2" rpy="0 0 0"/>
+      <mass value="10"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+                   <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+      <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="dummy_joint" type="fixed">
+     <parent link="dummy"/>
+     <child link="base_link"/>
+   </joint> -->
+  <gazebo>
+  <plugin name="differential_drive_controller_1" filename="libgazebo_ros_diff_drive.so">
+
+    <!-- Plugin update rate in Hz -->
+    <updateRate>10</updateRate>
+
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <leftJoint>final__link_2_JOINT_10</leftJoint>
+
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <rightJoint>final__link_2_JOINT_9</rightJoint>
+
+    <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+    <wheelSeparation>1.25</wheelSeparation>
+
+    <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+    <wheelDiameter>0.6</wheelDiameter>
+
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheelAcceleration>10.0</wheelAcceleration>
+
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <wheelTorque>200</wheelTorque>
+
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <commandTopic>cmd_vel</commandTopic>
+
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometryTopic>odom</odometryTopic>
+
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometryFrame>odom</odometryFrame>
+
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometrySource>1</odometrySource>
+
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publishWheelTF>false</publishWheelTF>
+
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publishOdom>false</publishOdom>
+
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <publishWheelJointState>false</publishWheelJointState>
+
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
+  </gazebo>
+  <gazebo>
+  <plugin name="differential_drive_controller_2" filename="libgazebo_ros_diff_drive.so">
+
+    <!-- Plugin update rate in Hz -->
+    <updateRate>10</updateRate>
+
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <leftJoint>final__link_2_JOINT_1</leftJoint>
+
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <rightJoint>final__link_2_JOINT_8</rightJoint>
+
+    <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+    <wheelSeparation>1.25</wheelSeparation>
+
+    <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+    <wheelDiameter>0.6</wheelDiameter>
+
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheelAcceleration>1.0</wheelAcceleration>
+
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <wheelTorque>20</wheelTorque>
+
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <commandTopic>cmd_vel</commandTopic>
+
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometryTopic>odom</odometryTopic>
+
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometryFrame>odom</odometryFrame>
+
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometrySource>1</odometrySource>
+
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publishWheelTF>false</publishWheelTF>
+
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publishOdom>false</publishOdom>
+
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <publishWheelJointState>false</publishWheelJointState>
+
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
+</gazebo>
+</robot>

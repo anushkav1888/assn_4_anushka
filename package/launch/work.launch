@@ -1,0 +1,6 @@
+<launch>
+
+  <!-- Start RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find package)/urdf/robot.urdf"/>
+
+</launch>
